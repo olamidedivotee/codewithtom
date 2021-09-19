@@ -1,0 +1,32 @@
+// Body Mass Index Calculator
+package com.codewithtom;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your body weight (kg): ");
+        int weightInKilogram = scanner.nextInt();
+
+        System.out.print("Enter your height (Meter): ");
+        float heightInMeter = scanner.nextFloat();
+
+        float bmi = (weightInKilogram) / (heightInMeter * heightInMeter);
+
+        if (bmi < 18.500000)
+            System.out.println("Underweight");
+
+        if (bmi >= 18.600000)
+            System.out.println("Normal");
+
+        if (bmi >= 25.000000)
+            System.out.println("Overweight");
+
+        if (bmi > 30.000000)
+            System.out.println("Obese");
+
+        System.out.println("Your Body Mass Index is " + bmi);
+    }
+}
