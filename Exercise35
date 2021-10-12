@@ -1,0 +1,30 @@
+package ChapterTwo;
+
+import java.util.Scanner;
+
+public class Exercise35 {
+    public static void main(String[] args) {
+        int milesPerDay;
+        int milesPerGallon;
+        int costPerGallon;
+        int parkingFees;
+        int tollsPerDay;
+        try (Scanner scanner = new Scanner(System.in)) {
+
+            System.out.print("Total miles driven per day: ");
+            milesPerDay = scanner.nextInt();
+            System.out.print("Cost per gallon of gasoline: ");
+            costPerGallon = scanner.nextInt();
+            System.out.print("Average miles per gallon: ");
+            milesPerGallon = scanner.nextInt();
+            System.out.print("Amount of parking fees per day: ");
+            parkingFees = scanner.nextInt();
+            System.out.print("Tolls per day: ");
+            tollsPerDay = scanner.nextInt();
+        }
+
+        int carPoolSavings =
+                ((milesPerDay / milesPerGallon) * costPerGallon) + parkingFees + tollsPerDay;
+        System.out.printf("%nCost per day of driving to work: %s%n", carPoolSavings);
+    }
+}
