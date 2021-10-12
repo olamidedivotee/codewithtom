@@ -1,0 +1,19 @@
+package ChapterTwo;
+
+import java.util.Scanner;
+// Calculating the diameter, circumference and area of a circle
+public class Exercise28 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double pie = 3.14159;
+        System.out.print("Input radius: ");
+        int radius = scanner.nextInt();
+        float diameter = 2 * radius;
+        double circumference = 2 * pie * radius;
+        double area = pie * (radius * radius);
+        System.out.printf("The diameter of the radius %s is %.2f%n", radius, diameter);
+        System.out.printf("The circumference of the radius %s is %.2f%n", radius, circumference);
+        System.out.printf("The area of the radius %s is %.2f%n", radius, area);
+
+    }
+}
