@@ -1,0 +1,17 @@
+package ChapterTwo;
+
+import java.util.Scanner;
+
+public class Exercise25 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a;
+        a = 42;
+        System.out.println();
+        int result = a % 2;
+        if (result == 0)
+            System.out.println("Even number");
+        else
+            System.out.println("Odd number");
+    }
+}
