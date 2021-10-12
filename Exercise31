@@ -1,0 +1,32 @@
+package ChapterTwo;
+
+public class Exercise31 {
+    public static void main(String[] args) {
+        int a = 0, b = 1, c = 2, d = 3, e = 4, f = 5, g = 6, h = 7, i = 8, j = 9, k = 10;
+
+        int square0 = a * a, cube0 = a * a * a;
+        int square1 = b * b, cube1 = b * b * b;
+        int square2 = c * c, cube2 = c * c * c;
+        int square3 = d * d, cube3 = d * d * d;
+        int square4 = e * e, cube4 = e * e * e;
+        int square5 = f * f, cube5 = f * f * f;
+        int square6 = g * g, cube6 = g * g * g;
+        int square7 = h * h, cube7 = h * h * h;
+        int square8 = i * i, cube8 = i * i * i;
+        int square9 = j * j, cube9 = j * j * j;
+        int square10 = k * k, cube10 = k * k * k;
+
+        System.out.println("Number   Square   Cube ");
+        System.out.println(a + "        " + square0 + "        " + cube0);
+        System.out.println(b + "        " + square1 + "        " + cube1);
+        System.out.println(c + "        " + square2 + "        " + cube2);
+        System.out.println(d + "        " + square3 + "        " + cube3);
+        System.out.println(e + "        " + square4 + "       " + cube4);
+        System.out.println(f + "        " + square5 + "       " + cube5);
+        System.out.println(g + "        " + square6 + "       " + cube6);
+        System.out.println(h + "        " + square7 + "       " + cube7);
+        System.out.println(i + "        " + square8 + "       " + cube8);
+        System.out.println(j + "        " + square9 + "       " + cube9);
+        System.out.println(k + "       " + square10 + "      " + cube10);
+    }
+}
