@@ -1,0 +1,22 @@
+package ChapterTwo;
+
+import java.util.Scanner;
+
+public class Exercise15 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int firstNumber = scanner.nextInt();
+        System.out.print("Enter second number: ");
+        int secondNumber = scanner.nextInt();
+
+        int sum = firstNumber + secondNumber;
+        int product = firstNumber * secondNumber;
+        int difference = firstNumber - secondNumber;
+        int division = firstNumber / secondNumber;
+
+        System.out.printf("The sum is %s%nThe product is %s%nThe difference is %s%n" +
+                "The quotient is %s%n", sum, product, difference, division);
+    }
+}
